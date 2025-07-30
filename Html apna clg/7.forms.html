@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action.php">
+    <!-- INPUT TAGS -->
+    USERNAME
+    <input type="text" placeholder="user name">
+    <br/>
+    PASSWORD
+    <input type="password" placeholder="enter password">
+     <br/>
+    NUMBER
+    <input type="number" placeholder="enter number">
+     <br/>
+    TIME
+    <input type="time" placeholder="enter time">
+     <br/>
+    COLOR
+    <input type="color">
+
+   </form> 
+<br/>
+<hr>
+   <!-- LABEL TAG -->
+    <form action="/server">
+
+   <label>
+    enter USERNAME
+    <input type="text" placeholder="username">
+   </label>
+
+   <label >
+    enter password
+    <input type="password" placeholder="password">
+
+
+   </label>
+   <br>
+   <hr>
+   <br>
+
+   <!-- LABEL CLASSICAL APPROACH -->
+  <div> 
+   <label for="username">enter username</label>
+   <input type="text" id="username" placeholder="enter username">  <!-- YAHA 44 AUR 45 MEIN JO (FOR) AUR (ID) KA VALUE HAI USSE SAME HONA CHAIYE -->
+   </div>
+   <div>
+    <label for="PASSWORD">enter password</label>
+    <input type="password" id="PASSWORD" placeholder="enter password">
+   </div>
+
+
+   <!-- BUTTON ELEMENT -->
+
+    <button>submit</button> <!--JAB GO LIVE KARKE HUM (SUBMIT) PE CLICK KARENGE TO WOH HUMHE FORM KE ACTION ATTRIBUTES K ANDER LEKAR CHALA JAAYEGA -->
+        <!-- /server -->
+
+     <button type="submit">jama kardo</button>
+     <button type="button">hello</button>   
+     <button type="reset">reset</button>
+    
+     <hr>
+
+     <!-- name attributes -->
+          <div> 
+   <label for="username">enter username</label>
+   <input type="text" id="username" placeholder="enter username" name="user">
+   </div>
+   <div>
+    <label for="PASSWORD">enter password</label>
+    <input type="password" id="PASSWORD" placeholder="enter password" name="pass">
+   </div>
+   <button type="submit">submit</button>
+     
+     <!-- server?user=rahul&pass=rahul -->
+   
+   </form>
+
+   <hr>
+   <br>
+   <!-- CHECKBOX -->
+   <form action="/server">
+    <input type="checkbox" id="age" name="age">  <!--JAB RUN HOGA TAB BOX  TICK  NAHI HOGA-->
+    <label for="age">i am 18+</label>
+    <button>SUBMIT</button>
+
+    <hr>
+        <input type="checkbox" id="age" name="age"checked>  <!--JAB RUN HOGA TAB BOX ALREADY TICK HOGA-->
+    <label for="age">i am 18+</label>
+    <button>SUBMIT</button> 
+    
+     
+   </form>
+   <!-- RADIO -->
+    <form action="/server">
+        <div>
+        <input type="radio" name="fruit" id="apple" value="apple">
+        <label for="apple">apple</label>
+
+         <input type="radio" name="fruit" id="litchi" value="litchi">
+        <label for="apple">litchi</label>
+
+       <input type="radio" name="fruit" id="banana" value="banana">
+        <label for="apple">banana</label>
+        <br>
+
+
+        </div>
+        <button>submit</button>
+        <div>
+            choose your subject:
+           <input type="checkbox" name="subject" id="physics" value="physics">
+        <label for="apple">apple</label>
+
+         <input type="checkbox" name="subject" id="math" value="match">
+        <label for="apple">litchi</label>
+
+        <input type="checkbox" name="subject" id="english" value="english">
+        <label for="apple">banana</label>
+        
+        </div>
+     <button>submit</button>
+        <hr>
+     <!-- DROPDOWN -->
+      <div>
+        choose profession
+        <select name="profession" id="profession">
+            <option value="student">student</option>
+            <option value="web">web developer</option>
+        </select>
+      </div>
+      <button>submit</button>
+        <hr>
+      <!-- RANGE  -->
+       <label for="volume">volume</label>
+       <input type="range" min="0" max="100" name="vol" step="5">
+       <button>submit</button>
+
+       <hr>
+       <!-- TEXTAREA -->
+        <label for="feedback">please provide your valuable feedback</label>
+        <textarea id="feedback" rows="5" col="100"></textarea>
+        <button>submit</button>
+    </form>
+
+
+</body>
+</html>

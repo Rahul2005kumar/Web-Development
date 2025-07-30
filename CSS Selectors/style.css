@@ -1,0 +1,47 @@
+/* UNIVERSAL SELECTOR */
+*{
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: aquamarine; */
+}
+
+/* element selector */
+h3{
+    color: brown;
+}
+
+/* ID SELECTOR */
+#login{
+    background-color: magenta;
+}
+#signup{
+    background-color: red;
+}
+/* CLASS SELECTOR */
+.upvote{
+    background-color: yellow;
+}
+
+/* DESCENDENT SELECTOR */
+p a{
+    background-color: pink;
+color: green;
+}
+
+nav ul li a{
+    color: brown;
+}
+
+/* ADJACENT SIBLING COMBINATOR */
+
+P+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    background-color: cornflowerblue;
+}
+
+/* CHILD COMBINATOR */
+div>input{
+    background-color: deeppink;
+}
